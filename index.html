@@ -35,23 +35,32 @@
         </button>
     </nav>
 
-    <!-- Agregar numeros -->
-    <div class="modal" id="agregar-numero">
-        <div class="agregar-numero">
-            <button onclick="cerrarModal()" class="x-modal">
-                <i class="fa-solid fa-square-xmark fa-2xl"></i>
-            </button>
-            <p style="text-align: center;">Agregar numeros</p>
-            <div class="inputs-container">
+<!-- Agregar numeros -->
+<div>
+    <p style="text-align: center;">Agregar numeros</p>
+    <div class="inputs-container">
+        <label for="name">Nombre y Apellido</label>
+        <input type="text" name="name" id="name">
 
-                <input type="text" name="name" id="name" placeholder="Nombre y Apellido">
-                <input type="text" name="insta" id="insta" placeholder="Instagram">
-                <input type="number" name="num" id="num" style="max-width: 50px;" placeholder="N°00">
+        <label for="insta">Instagram</label>
+        <input type="text" name="insta" id="insta">
 
-                <button class="btn-agregar" onclick="renderizarNumeros()">Agregar</button>
-            </div>
-        </div>
+        <label for="num">Numero</label>
+        <input type="number" name="num" id="num">
+
+        <label for="estado">Estado</label>
+        <select id="estado">
+            <option value="disponible">Disponible</option>
+            <option value="confirmado">Confirmado</option>
+            <option value="pendiente">Pendiente</option>
+        </select>
+
+        <label for="color">Color</label>
+        <input type="color" id="color" value="#000000">
+
+        <button onclick="renderizarNumeros()">Buton</button>
     </div>
+</div>
 
 
     <!-- TABLA DE NUMEROS -->
